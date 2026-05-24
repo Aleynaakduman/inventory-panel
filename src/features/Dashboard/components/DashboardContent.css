@@ -1,18 +1,22 @@
-.dashboard-cards{
+.dashboard-cards {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 100px;
- 
-   
+    gap: 10px;
+    
+
+
 }
 
-.dashboard-cards .card1 , .card2 , .card3{
+.dashboard-cards .card1,
+.card2,
+.card3 {
     border-radius: 5px;
     min-height: 100px;
     min-width: 320px;
 }
 
-.card-conteiner{
+.card-conteiner {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -22,51 +26,94 @@
 }
 
 
-.card1{
+.card1 {
     background-color: #e2ecf8
 }
 
-.card2{
+.card2 {
     background-color: #FFF4B5;
 }
 
-.card3{
+.card3 {
     background-color: #f4a3a3b9;
 }
-.card-icon1{
+
+.card-icon1 {
     background-color: #BFE3FF;
-    color:  #3b67cc;
+    color: #3b67cc;
     padding: 10px;
     border-radius: 50%;
     font-size: 20px;
-      display: flex;
-    align-items: center;
-
-}
-
-
-.card-icon2{
-        background-color: #f4d682;
-    color:  #7C5A00;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 20px;  
-      display: flex;
-    align-items: center;
-    
-}
-
-.card-icon3{
-        background-color: #faa9a9;
-    color:  #681515;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 20px; 
     display: flex;
     align-items: center;
-    
+
 }
 
-.card-text{
+
+.card-icon2 {
+    background-color: #f4d682;
+    color: #7C5A00;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.card-icon3 {
+    background-color: #faa9a9;
+    color: #681515;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.card-text {
     color: #6B7280;
+}
+
+
+/*Dashboard Alt Kısım*/
+
+.dashboard-bottom, .dashboard-bottom-table{
+    margin-top: 40px;
+}
+
+.dashboard-bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.dashboard-btn button{
+  margin: 0 5px;
+}
+
+.btn-1{
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #6B7280 ;
+    padding: 8px;
+    width: 150px;
+   
+   
+}
+
+.btn-2{
+    padding: 8px;
+    width: 150px;
+    background-color: #3b67cc;
+    color: #BFE3FF;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.dashboard-bottom-content h4{
+    font-size: 22px;
 }

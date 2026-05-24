@@ -2,11 +2,14 @@ import './DashboardContent.css'
 import { MdOutlineInventory } from "react-icons/md";
 import { BsExclamationCircle } from "react-icons/bs";
 import { IoCloseCircleOutline } from "react-icons/io5";
-
+import { TfiExport } from "react-icons/tfi";
+import {FiPlus} from "react-icons/fi";
+import DashboardTable from './DashboardTable'
 
 const DashboardContent = () => {
   return (
     <div>
+        {/*Dashboard İlk Kısım */}
         <div className="dashboard-cards">
             <div className="card1" >
                 <div className="card-conteiner">
@@ -49,6 +52,27 @@ const DashboardContent = () => {
             </div>
         </div>
 
+
+
+
+        {/* Dasboard Tablo Kısmı */}
+        <div className="dashboard-bottom">
+            <div className="dashboard-bottom-content">
+                    <h4>Ürünler</h4>
+                    <div className="dashboard-btn">
+                    <button  className='btn-1' >
+                        <TfiExport /> Dışa Aktar
+                    </button>
+                    <button className='btn-2' > 
+                        <FiPlus /> Yeni Ürün Ekle</button>
+                    </div>
+            </div>
+
+            <div className="dashboard-bottom-table">
+                <DashboardTable/>
+
+            </div>
+        </div>
     </div>
   )
 }
