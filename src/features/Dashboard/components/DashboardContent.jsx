@@ -5,8 +5,19 @@ import { IoCloseCircleOutline } from "react-icons/io5";
 import { TfiExport } from "react-icons/tfi";
 import {FiPlus} from "react-icons/fi";
 import DashboardTable from './DashboardTable'
+import {useEffect, useState} from 'react'
 
 const DashboardContent = () => {
+const [products, setProducts] = useState([])
+useEffect(() => {
+fetch('http://localhost:3001/products')
+.then((ress) => ress.json())
+.then((data) => setProducts(data))
+})
+
+const totalProducts = products.length;
+const criticalStockCount = products.filter(p => p.status === 'kritik').length;
+const outOfStockCount = products.filter(p => p.status === 'tükendi').length;
   return (
     <div>
         {/*Dashboard İlk Kısım */}
@@ -19,8 +30,8 @@ const DashboardContent = () => {
                         </div>
                    
                     <div className="card-content">
-                        <p>Toplam Ürün</p>
-                    <h3>128</h3>
+                        <p> Ürün</p>
+                    <h3>{totalProducts}</h3>
                     <p className='card-text' >Tüm ürün sayısı</p>
                     </div>
                 </div>
@@ -31,7 +42,7 @@ const DashboardContent = () => {
                    <div className="card-icon2" > <BsExclamationCircle/></div>
                         <div className="card-content">
                               <p>Kritik Stok</p>
-                    <h3>18</h3>
+                    <h3>{criticalStockCount}</h3>
                     <p  className='card-text' >Kritik stokta olan ürünler</p>
                         </div>
                 </div>
@@ -45,7 +56,7 @@ const DashboardContent = () => {
                    </div>
                       <div className="card-content">
                         <p>Tükenenler</p>
-                    <h3>7</h3>
+                    <h3>{outOfStockCount}</h3>
                     <p  className='card-text' >Stokta tükenen ürünler </p>
                       </div>
                 </div>

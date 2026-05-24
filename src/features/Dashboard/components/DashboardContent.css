@@ -117,3 +117,34 @@
 .dashboard-bottom-content h4{
     font-size: 22px;
 }
+
+
+.search{
+   display: flex;
+   justify-content: space-between;
+
+}
+
+
+.search input{
+    padding: 8px;
+    border: 1px solid #babec3;
+    border-radius: 4px;
+    margin: 6px;
+    width: 250px;
+
+}
+
+.select-search{
+    padding: 8px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.select-search select{
+    padding: 8px;
+    outline: none;
+     border: 1px solid #babec3;
+    border-radius: 4px;
+}

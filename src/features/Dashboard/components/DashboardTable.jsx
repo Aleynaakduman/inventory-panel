@@ -14,33 +14,32 @@ import {useState, useEffect} from 'react'
 
 const columns = [
   {
-    width: 100,
+    width: 80,
     label: 'ID',
     dataKey: 'id',
   },
   {
-    width: 100,
+    width: 220,
     label: 'Ürün',
     dataKey: 'name',
   },
   {
-    width: 50,
+    width: 160,
     label: 'Kategori',
-    dataKey: 'category',
-    numeric: true,
-  },
+    dataKey: 'category' 
+   },
   {
-    width: 110,
+    width: 120,
     label: 'Birim',
     dataKey: 'quantity',
   },
   {
-    width: 130,
+    width: 120,
     label: 'Adet',
     dataKey: 'unit',
   },
    {
-    width: 130,
+    width: 140,
     label: 'Durum',
     dataKey: 'status',
   }
@@ -95,16 +94,66 @@ function rowContent(_index, row) {
 
 export default function ReactVirtualizedTable() {
   const [products, setProducts] = useState([]);
+
+
+  const [selectedCategory, setSelectedCategory] = useState("Hepsi");
+  const [selectedStatus, setSelectedStatus] = useState("Hepsi");
+  const [searchTerm, setSearchTerm] = useState("");
+
+
   useEffect(() => {
     fetch('http://localhost:3001/products')
     .then((ress) => ress.json())
     .then((data) => setProducts(data))
   } , [])
 
+
+  const filterProducts = products.filter((product) => {
+    const categoryMatch =
+      selectedCategory === "Hepsi" ||
+      product.category === selectedCategory;
+
+    const statusMatch = selectedStatus === "Hepsi" || product.status === selectedStatus;
+
+
+    const searchMatch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
+
+    return categoryMatch && statusMatch && searchMatch;
+
+  });
+
+
+
   return (
     <Paper style={{ height: 400, width: '100%' }}>
+        <div className="search">
+
+    
+
+
+          <input type="text" placeholder='Ürün Adı Ara...' value={searchTerm}  onChange={(e) => setSearchTerm(e.target.value)}/>
+   <div className="select-search">
+      <select defaultValue = "Hepsi" value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
+      <option value="Hepsi">Tüm Kategoriler</option>
+      <option value="Elektronik">Elektronik </option>
+      <option value="Kırtasiye">Kırtasiye</option>
+      <option value="Aksesuar">Aksesuar</option>
+      <option value="Mobilya">Mobilya</option>
+      <option value="Depolama">Depolama</option>
+
+    </select>
+
+      <select defaultValue="Hepsi" value={selectedStatus} onChange={(e) => setSelectedStatus(e.target.value)}>
+        <option value="Hepsi">Tüm Durumlar</option>
+        <option value="stokta">Stoktakiler</option>
+        <option value="tükendi">Tükenenler</option>
+        <option value="kritik">Kritikler</option>
+      </select>
+   </div>
+        </div>
+      
       <TableVirtuoso
-        data={products}
+        data={filterProducts}
         components={VirtuosoTableComponents}
         fixedHeaderContent={fixedHeaderContent}
         itemContent={rowContent}
