@@ -7,51 +7,46 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { TableVirtuoso } from 'react-virtuoso';
-import Chance from 'chance';
 
-const chance = new Chance(42);
+import {useState, useEffect} from 'react'
 
-function createData(id) {
-  return {
-    id,
-    firstName: chance.first(),
-    lastName: chance.last(),
-    age: chance.age(),
-    phone: chance.phone(),
-    state: chance.state({ full: true }),
-  };
-}
+
 
 const columns = [
   {
     width: 100,
-    label: 'First Name',
-    dataKey: 'firstName',
+    label: 'ID',
+    dataKey: 'id',
   },
   {
     width: 100,
-    label: 'Last Name',
-    dataKey: 'lastName',
+    label: 'Ürün',
+    dataKey: 'name',
   },
   {
     width: 50,
-    label: 'Age',
-    dataKey: 'age',
+    label: 'Kategori',
+    dataKey: 'category',
     numeric: true,
   },
   {
     width: 110,
-    label: 'State',
-    dataKey: 'state',
+    label: 'Birim',
+    dataKey: 'quantity',
   },
   {
     width: 130,
-    label: 'Phone Number',
-    dataKey: 'phone',
+    label: 'Adet',
+    dataKey: 'unit',
   },
+   {
+    width: 130,
+    label: 'Durum',
+    dataKey: 'status',
+  }
 ];
 
-const rows = Array.from({ length: 200 }, (_, index) => createData(index));
+
 
 const VirtuosoTableComponents = {
   Scroller: React.forwardRef((props, ref) => (
@@ -99,10 +94,17 @@ function rowContent(_index, row) {
 }
 
 export default function ReactVirtualizedTable() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:3001/products')
+    .then((ress) => ress.json())
+    .then((data) => setProducts(data))
+  } , [])
+
   return (
     <Paper style={{ height: 400, width: '100%' }}>
       <TableVirtuoso
-        data={rows}
+        data={products}
         components={VirtuosoTableComponents}
         fixedHeaderContent={fixedHeaderContent}
         itemContent={rowContent}
