@@ -9,3 +9,23 @@ body{
   background-color: #F8F9FA;
 }
 
+.app-loyout{
+ display: flex;
+ width: 100%;
+ min-height: 100vh;
+}
+
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding:0  15px;
+
+
+}
+
+.main-content{
+  padding: 20px 16px;
+  flex-grow: 80;
+}
