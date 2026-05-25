@@ -1,104 +1,780 @@
 {
   "products": [
-    { "id": "1", "name": "Kablosuz Oyuncu Klavyesi", "category": "Elektronik", "quantity": 25, "unit": "Adet", "status": "stokta" },
-    { "id": "2", "name": "Ortopedik Ofis Koltuğu", "category": "Mobilya", "quantity": 3, "unit": "Adet", "status": "kritik" },
-    { "id": "3", "name": "A4 Fotokopi Kağıdı (80 gr)", "category": "Kırtasiye", "quantity": 0, "unit": "Kutu", "status": "tükendi" },
-    { "id": "4", "name": "Bluetooth Kulak Üstü Kulaklık", "category": "Elektronik", "quantity": 18, "unit": "Adet", "status": "stokta" },
-    { "id": "5", "name": "Çalışma Masası (Ahşap)", "category": "Mobilya", "quantity": 5, "unit": "Adet", "status": "stokta" },
-    { "id": "6", "name": "Fosforlu Kalem Seti (4'lü)", "category": "Kırtasiye", "quantity": 2, "unit": "Paket", "status": "kritik" },
-    { "id": "7", "name": "27 inç Oyuncu Monitörü", "category": "Elektronik", "quantity": 1, "unit": "Adet", "status": "kritik" },
-    { "id": "8", "name": "Type-C Çoklayıcı Hub", "category": "Elektronik", "quantity": 40, "unit": "Adet", "status": "stokta" },
-    { "id": "9", "name": "Şeffaf Dosya (100'lü)", "category": "Kırtasiye", "quantity": 15, "unit": "Paket", "status": "stokta" },
-    { "id": "10", "name": "Ergonomik Mouse Pad", "category": "Elektronik", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "11", "name": "Kesintisiz Güç Kaynağı (UPS)", "category": "Elektronik", "quantity": 4, "unit": "Adet", "status": "stokta" },
-    { "id": "12", "name": "Kitaplık (5 Raflı Beyaz)", "category": "Mobilya", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "13", "name": "Masa Lambası (LED)", "category": "Mobilya", "quantity": 12, "unit": "Adet", "status": "stokta" },
-    { "id": "14", "name": "Zımba ve Tel Seti", "category": "Kırtasiye", "quantity": 8, "unit": "Adet", "status": "stokta" },
-    { "id": "15", "name": "Harici Taşınabilir SSD (1TB)", "category": "Depolama", "quantity": 2, "unit": "Adet", "status": "kritik" },
-    { "id": "16", "name": "Dikey Laptop Standı", "category": "Aksesuar", "quantity": 30, "unit": "Adet", "status": "stokta" },
-    { "id": "17", "name": "Tükenmez Kalem (50'li Mavi)", "category": "Kırtasiye", "quantity": 6, "unit": "Kutu", "status": "stokta" },
-    { "id": "18", "name": "Akıllı Priz (Wi-Fi)", "category": "Elektronik", "quantity": 14, "unit": "Adet", "status": "stokta" },
-    { "id": "19", "name": "Ayarlanabilir Ayak Desteği", "category": "Mobilya", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "20", "name": "4K Web Kamerası", "category": "Elektronik", "quantity": 7, "unit": "Adet", "status": "stokta" },
-    { "id": "21", "name": "USB Flash Bellek (64GB)", "category": "Depolama", "quantity": 85, "unit": "Adet", "status": "stokta" },
-    { "id": "22", "name": "Yazı Tahtası (90x120cm)", "category": "Kırtasiye", "quantity": 3, "unit": "Adet", "status": "kritik" },
-    { "id": "23", "name": "Mıknatıslı Board Pen (4'lü)", "category": "Kırtasiye", "quantity": 22, "unit": "Paket", "status": "stokta" },
-    { "id": "24", "name": "Oyuncu Koltuğu (RGB)", "category": "Mobilya", "quantity": 1, "unit": "Adet", "status": "kritik" },
-    { "id": "25", "name": "HDMı Kablo (3 Metre)", "category": "Aksesuar", "quantity": 50, "unit": "Adet", "status": "stokta" },
-    { "id": "26", "name": "Kablosuz Sunum Kumandası", "category": "Elektronik", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "27", "name": "Çöp Kovası (Paslanmaz Çelik)", "category": "Mobilya", "quantity": 11, "unit": "Adet", "status": "stokta" },
-    { "id": "28", "name": "Evrak Rafı (3'lü Metal)", "category": "Kırtasiye", "quantity": 9, "unit": "Adet", "status": "stokta" },
-    { "id": "29", "name": "Laminasyon Makinesi", "category": "Elektronik", "quantity": 2, "unit": "Adet", "status": "kritik" },
-    { "id": "30", "name": "Yaka Kartı İpi (100'lü)", "category": "Kırtasiye", "quantity": 5, "unit": "Paket", "status": "stokta" },
-    { "id": "31", "name": "Mekanik Klavye (Blue Switch)", "category": "Elektronik", "quantity": 16, "unit": "Adet", "status": "stokta" },
-    { "id": "32", "name": "Kablosuz Dikey Mouse", "category": "Elektronik", "quantity": 22, "unit": "Adet", "status": "stokta" },
-    { "id": "33", "name": "Not Defteri (A5 Çizgili)", "category": "Kırtasiye", "quantity": 60, "unit": "Adet", "status": "stokta" },
-    { "id": "34", "name": "Sırt Destek Minderi", "category": "Aksesuar", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "35", "name": "Çift Monitör Kolu (Amortisörlü)", "category": "Aksesuar", "quantity": 4, "unit": "Adet", "status": "stokta" },
-    { "id": "36", "name": "Yapışkanlı Not Kağıdı (Post-it)", "category": "Kırtasiye", "quantity": 120, "unit": "Adet", "status": "stokta" },
-    { "id": "37", "name": "Evrak İmha Makinesi", "category": "Elektronik", "quantity": 1, "unit": "Adet", "status": "kritik" },
-    { "id": "38", "name": "Bluetooth Hoparlör (20W)", "category": "Elektronik", "quantity": 13, "unit": "Adet", "status": "stokta" },
-    { "id": "39", "name": "Çekmece İçi Düzenleyici", "category": "Mobilya", "quantity": 25, "unit": "Adet", "status": "stokta" },
-    { "id": "40", "name": "Kablo Koruyucu Spiral (5m)", "category": "Aksesuar", "quantity": 45, "unit": "Adet", "status": "stokta" },
-    { "id": "41", "name": "Akıllı Saat Şarj Standı", "category": "Aksesuar", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "42", "name": "Sıvı Sabunluk (Sensörlü)", "category": "Elektronik", "quantity": 8, "unit": "Adet", "status": "stokta" },
-    { "id": "43", "name": "Klasör Klasik (Geniş Mavi)", "category": "Kırtasiye", "quantity": 70, "unit": "Adet", "status": "stokta" },
-    { "id": "44", "name": "Mikrofiber Temizlik Bezi (10'lu)", "category": "Aksesuar", "quantity": 19, "unit": "Paket", "status": "stokta" },
-    { "id": "45", "name": "MagSafe Kablosuz Şarj Cihazı", "category": "Elektronik", "quantity": 3, "unit": "Adet", "status": "kritik" },
-    { "id": "46", "name": "Hava Temizleme Cihazı", "category": "Elektronik", "quantity": 5, "unit": "Adet", "status": "stokta" },
-    { "id": "47", "name": "Ayarlanabilir Amortisörlü Masa", "category": "Mobilya", "quantity": 2, "unit": "Adet", "status": "kritik" },
-    { "id": "48", "name": "Sihirli Sünger Seti (6'lı)", "category": "Aksesuar", "quantity": 0, "unit": "Paket", "status": "tükendi" },
-    { "id": "49", "name": "Sırt Çantası (15.6 inç Laptop)", "category": "Aksesuar", "quantity": 17, "unit": "Adet", "status": "stokta" },
-    { "id": "50", "name": "Grafik Tablet (Çizim İçin)", "category": "Elektronik", "quantity": 6, "unit": "Adet", "status": "stokta" },
-    { "id": "51", "name": "Yaka Mikrofonu (Wireless)", "category": "Elektronik", "quantity": 4, "unit": "Adet", "status": "stokta" },
-    { "id": "52", "name": "Para Sayma Makinesi", "category": "Elektronik", "quantity": 1, "unit": "Adet", "status": "kritik" },
-    { "id": "53", "name": "Koli Bandı (6'lı Paket)", "category": "Kırtasiye", "quantity": 32, "unit": "Paket", "status": "stokta" },
-    { "id": "54", "name": "Maket Bıçağı (Metal Gövde)", "category": "Kırtasiye", "quantity": 15, "unit": "Adet", "status": "stokta" },
-    { "id": "55", "name": "Hesap Makinesi (Bilimsel)", "category": "Kırtasiye", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "56", "name": "Çelik Kasa (Dijital Şifreli)", "category": "Mobilya", "quantity": 2, "unit": "Adet", "status": "kritik" },
-    { "id": "57", "name": "Ethernet Kablosu Cat6 (10m)", "category": "Aksesuar", "quantity": 38, "unit": "Adet", "status": "stokta" },
-    { "id": "58", "name": "Powerbank (20.000 mAh)", "category": "Elektronik", "quantity": 21, "unit": "Adet", "status": "stokta" },
-    { "id": "59", "name": "Elbise Askılığı (Tekerlekli)", "category": "Mobilya", "quantity": 5, "unit": "Adet", "status": "stokta" },
-    { "id": "60", "name": "Ofis İçi Ayaklı Pano", "category": "Mobilya", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "61", "name": "Taşınabilir HDD (2TB)", "category": "Depolama", "quantity": 14, "unit": "Adet", "status": "stokta" },
-    { "id": "62", "name": "NVMe M.2 SSD (500GB)", "category": "Depolama", "quantity": 3, "unit": "Adet", "status": "kritik" },
-    { "id": "63", "name": "Kurşun Kalem (12'li)", "category": "Kırtasiye", "quantity": 48, "unit": "Paket", "status": "stokta" },
-    { "id": "64", "name": "Silgi (Büyük Boy 24'lü)", "category": "Kırtasiye", "quantity": 12, "unit": "Kutu", "status": "stokta" },
-    { "id": "65", "name": "Sıcak Silikon Tabancası", "category": "Elektronik", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "66", "name": "Ring Light Işık Standı", "category": "Aksesuar", "quantity": 9, "unit": "Adet", "status": "stokta" },
-    { "id": "67", "name": "Akustik Ses Yalıtım Paneli", "category": "Aksesuar", "quantity": 60, "unit": "Adet", "status": "stokta" },
-    { "id": "68", "name": "Projektör / Projeksiyon Cihazı", "category": "Elektronik", "quantity": 2, "unit": "Adet", "status": "kritik" },
-    { "id": "69", "name": "Projeksiyon Perdesi (Storlu)", "category": "Mobilya", "quantity": 4, "unit": "Adet", "status": "stokta" },
-    { "id": "70", "name": "Termos (0.75L Paslanmaz)", "category": "Aksesuar", "quantity": 11, "unit": "Adet", "status": "stokta" },
-    { "id": "71", "name": "Kapsül Kahve Makinesi", "category": "Elektronik", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "72", "name": "Filtre Kahve Kağıdı (100'lü)", "category": "Aksesuar", "quantity": 55, "unit": "Paket", "status": "stokta" },
-    { "id": "73", "name": "Lazer Metre (40 Metre)", "category": "Elektronik", "quantity": 6, "unit": "Adet", "status": "stokta" },
-    { "id": "74", "name": "Giyotin Kağıt Kesme Makinesi", "category": "Kırtasiye", "quantity": 1, "unit": "Adet", "status": "kritik" },
-    { "id": "75", "name": "Plastik Kelepçe Seti (100'lü)", "category": "Aksesuar", "quantity": 90, "unit": "Paket", "status": "stokta" },
-    { "id": "76", "name": "Şarj Edilebilir Pil (AA 4'lü)", "category": "Elektronik", "quantity": 24, "unit": "Paket", "status": "stokta" },
-    { "id": "77", "name": "Hızlı Pil Şarj Cihazı", "category": "Elektronik", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "78", "name": "Bant Makinesi (Masa Üstü)", "category": "Kırtasiye", "quantity": 13, "unit": "Adet", "status": "stokta" },
-    { "id": "79", "name": "Ataş Seti (Renkli 100'lü)", "category": "Kırtasiye", "quantity": 150, "unit": "Paket", "status": "stokta" },
-    { "id": "80", "name": "Evrak İmha Yağı (250ml)", "category": "Aksesuar", "quantity": 3, "unit": "Adet", "status": "kritik" },
-    { "id": "81", "name": "Çift Taraflı Bant (Silikon)", "category": "Aksesuar", "quantity": 42, "unit": "Adet", "status": "stokta" },
-    { "id": "82", "name": "Magazinlik Plastik (Dikey)", "category": "Kırtasiye", "quantity": 28, "unit": "Adet", "status": "stokta" },
-    { "id": "83", "name": "Klavye Temizleme Jeli", "category": "Aksesuar", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "84", "name": "Basınçlı Hava Spreyi (Toz Alıcı)", "category": "Aksesuar", "quantity": 35, "unit": "Adet", "status": "stokta" },
-    { "id": "85", "name": "Ekran Temizleme Kiti", "category": "Aksesuar", "quantity": 47, "unit": "Adet", "status": "stokta" },
-    { "id": "86", "name": "USB C Kulaklık Dönüştürücü", "category": "Aksesuar", "quantity": 60, "unit": "Adet", "status": "stokta" },
-    { "id": "87", "name": "Akıllı Temizlik Robotu", "category": "Elektronik", "quantity": 1, "unit": "Adet", "status": "kritik" },
-    { "id": "88", "name": "Döküman Kamerası", "category": "Elektronik", "quantity": 2, "unit": "Adet", "status": "kritik" },
-    { "id": "89", "name": "Sıvı Tebeşir Kalemi (Beyaz)", "category": "Kırtasiye", "quantity": 16, "unit": "Adet", "status": "stokta" },
-    { "id": "90", "name": "Mantar Pano (60x90cm)", "category": "Kırtasiye", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "91", "name": "Harita Çivisi (50'li)", "category": "Kırtasiye", "quantity": 110, "unit": "Paket", "status": "stokta" },
-    { "id": "92", "name": "Bluetooth Dongle USB", "category": "Aksesuar", "quantity": 23, "unit": "Adet", "status": "stokta" },
-    { "id": "93", "name": "Wi-Fi Menzil Genişletici", "category": "Elektronik", "quantity": 8, "unit": "Adet", "status": "stokta" },
-    { "id": "94", "name": "Ofis Tipi Sehpa", "category": "Mobilya", "quantity": 4, "unit": "Adet", "status": "stokta" },
-    { "id": "95", "name": "Askılı Dosya Havuzu (Metal)", "category": "Kırtasiye", "quantity": 0, "unit": "Adet", "status": "tükendi" },
-    { "id": "96", "name": "Askılı Dosya Föyü (50'li)", "category": "Kırtasiye", "quantity": 12, "unit": "Paket", "status": "stokta" },
-    { "id": "97", "name": "Lazer Sunum Kalemi (Yeşil)", "category": "Elektronik", "quantity": 3, "unit": "Adet", "status": "kritik" },
-    { "id": "98", "name": "HDMI Dağıtıcı (1 Giriş 4 Çıkış)", "category": "Elektronik", "quantity": 7, "unit": "Adet", "status": "stokta" },
-    { "id": "99", "name": "Kablo Etiketleme Makinesi", "category": "Elektronik", "quantity": 2, "unit": "Adet", "status": "kritik" },
-    { "id": "100", "name": "Etiket Şeridi (Yedek Kartuş)", "category": "Aksesuar", "quantity": 19, "unit": "Adet", "status": "stokta" }
+    {
+      "id": "2",
+      "name": "Ortopedik Ofis Koltuğu",
+      "category": "Mobilya",
+      "quantity": 3,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "3",
+      "name": "A4 Fotokopi Kağıdı (80 gr)",
+      "category": "Kırtasiye",
+      "quantity": 0,
+      "unit": "Kutu",
+      "status": "tükendi"
+    },
+    {
+      "id": "4",
+      "name": "Bluetooth Kulak Üstü Kulaklık",
+      "category": "Elektronik",
+      "quantity": 18,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "5",
+      "name": "Çalışma Masası (Ahşap)",
+      "category": "Mobilya",
+      "quantity": 5,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "6",
+      "name": "Fosforlu Kalem Seti (4'lü)",
+      "category": "Kırtasiye",
+      "quantity": 2,
+      "unit": "Paket",
+      "status": "kritik"
+    },
+    {
+      "id": "7",
+      "name": "27 inç Oyuncu Monitörü",
+      "category": "Elektronik",
+      "quantity": 1,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "9",
+      "name": "Şeffaf Dosya (100'lü)",
+      "category": "Kırtasiye",
+      "quantity": 15,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "10",
+      "name": "Ergonomik Mouse Pad",
+      "category": "Elektronik",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "11",
+      "name": "Kesintisiz Güç Kaynağı (UPS)",
+      "category": "Elektronik",
+      "quantity": 4,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "12",
+      "name": "Kitaplık (5 Raflı Beyaz)",
+      "category": "Mobilya",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "13",
+      "name": "Masa Lambası (LED)",
+      "category": "Mobilya",
+      "quantity": 12,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "14",
+      "name": "Zımba ve Tel Seti",
+      "category": "Kırtasiye",
+      "quantity": 8,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "15",
+      "name": "Harici Taşınabilir SSD (1TB)",
+      "category": "Depolama",
+      "quantity": 2,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "16",
+      "name": "Dikey Laptop Standı",
+      "category": "Aksesuar",
+      "quantity": 30,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "17",
+      "name": "Tükenmez Kalem (50'li Mavi)",
+      "category": "Kırtasiye",
+      "quantity": 6,
+      "unit": "Kutu",
+      "status": "stokta"
+    },
+    {
+      "id": "18",
+      "name": "Akıllı Priz (Wi-Fi)",
+      "category": "Elektronik",
+      "quantity": 14,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "19",
+      "name": "Ayarlanabilir Ayak Desteği",
+      "category": "Mobilya",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "20",
+      "name": "4K Web Kamerası",
+      "category": "Elektronik",
+      "quantity": 7,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "21",
+      "name": "USB Flash Bellek (64GB)",
+      "category": "Depolama",
+      "quantity": 85,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "22",
+      "name": "Yazı Tahtası (90x120cm)",
+      "category": "Kırtasiye",
+      "quantity": 3,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "23",
+      "name": "Mıknatıslı Board Pen (4'lü)",
+      "category": "Kırtasiye",
+      "quantity": 22,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "24",
+      "name": "Oyuncu Koltuğu (RGB)",
+      "category": "Mobilya",
+      "quantity": 1,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "25",
+      "name": "HDMı Kablo (3 Metre)",
+      "category": "Aksesuar",
+      "quantity": 50,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "26",
+      "name": "Kablosuz Sunum Kumandası",
+      "category": "Elektronik",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "27",
+      "name": "Çöp Kovası (Paslanmaz Çelik)",
+      "category": "Mobilya",
+      "quantity": 11,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "28",
+      "name": "Evrak Rafı (3'lü Metal)",
+      "category": "Kırtasiye",
+      "quantity": 9,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "29",
+      "name": "Laminasyon Makinesi",
+      "category": "Elektronik",
+      "quantity": 2,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "30",
+      "name": "Yaka Kartı İpi (100'lü)",
+      "category": "Kırtasiye",
+      "quantity": 5,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "31",
+      "name": "Mekanik Klavye (Blue Switch)",
+      "category": "Elektronik",
+      "quantity": 16,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "32",
+      "name": "Kablosuz Dikey Mouse",
+      "category": "Elektronik",
+      "quantity": 22,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "33",
+      "name": "Not Defteri (A5 Çizgili)",
+      "category": "Kırtasiye",
+      "quantity": 60,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "34",
+      "name": "Sırt Destek Minderi",
+      "category": "Aksesuar",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "35",
+      "name": "Çift Monitör Kolu (Amortisörlü)",
+      "category": "Aksesuar",
+      "quantity": 4,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "36",
+      "name": "Yapışkanlı Not Kağıdı (Post-it)",
+      "category": "Kırtasiye",
+      "quantity": 120,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "37",
+      "name": "Evrak İmha Makinesi",
+      "category": "Elektronik",
+      "quantity": 1,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "38",
+      "name": "Bluetooth Hoparlör (20W)",
+      "category": "Elektronik",
+      "quantity": 13,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "39",
+      "name": "Çekmece İçi Düzenleyici",
+      "category": "Mobilya",
+      "quantity": 25,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "40",
+      "name": "Kablo Koruyucu Spiral (5m)",
+      "category": "Aksesuar",
+      "quantity": 45,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "41",
+      "name": "Akıllı Saat Şarj Standı",
+      "category": "Aksesuar",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "42",
+      "name": "Sıvı Sabunluk (Sensörlü)",
+      "category": "Elektronik",
+      "quantity": 8,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "43",
+      "name": "Klasör Klasik (Geniş Mavi)",
+      "category": "Kırtasiye",
+      "quantity": 70,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "44",
+      "name": "Mikrofiber Temizlik Bezi (10'lu)",
+      "category": "Aksesuar",
+      "quantity": 19,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "45",
+      "name": "MagSafe Kablosuz Şarj Cihazı",
+      "category": "Elektronik",
+      "quantity": 3,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "46",
+      "name": "Hava Temizleme Cihazı",
+      "category": "Elektronik",
+      "quantity": 5,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "47",
+      "name": "Ayarlanabilir Amortisörlü Masa",
+      "category": "Mobilya",
+      "quantity": 2,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "48",
+      "name": "Sihirli Sünger Seti (6'lı)",
+      "category": "Aksesuar",
+      "quantity": 0,
+      "unit": "Paket",
+      "status": "tükendi"
+    },
+    {
+      "id": "49",
+      "name": "Sırt Çantası (15.6 inç Laptop)",
+      "category": "Aksesuar",
+      "quantity": 17,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "50",
+      "name": "Grafik Tablet (Çizim İçin)",
+      "category": "Elektronik",
+      "quantity": 6,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "51",
+      "name": "Yaka Mikrofonu (Wireless)",
+      "category": "Elektronik",
+      "quantity": 4,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "52",
+      "name": "Para Sayma Makinesi",
+      "category": "Elektronik",
+      "quantity": 1,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "53",
+      "name": "Koli Bandı (6'lı Paket)",
+      "category": "Kırtasiye",
+      "quantity": 32,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "54",
+      "name": "Maket Bıçağı (Metal Gövde)",
+      "category": "Kırtasiye",
+      "quantity": 15,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "55",
+      "name": "Hesap Makinesi (Bilimsel)",
+      "category": "Kırtasiye",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "56",
+      "name": "Çelik Kasa (Dijital Şifreli)",
+      "category": "Mobilya",
+      "quantity": 2,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "57",
+      "name": "Ethernet Kablosu Cat6 (10m)",
+      "category": "Aksesuar",
+      "quantity": 38,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "58",
+      "name": "Powerbank (20.000 mAh)",
+      "category": "Elektronik",
+      "quantity": 21,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "59",
+      "name": "Elbise Askılığı (Tekerlekli)",
+      "category": "Mobilya",
+      "quantity": 5,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "60",
+      "name": "Ofis İçi Ayaklı Pano",
+      "category": "Mobilya",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "61",
+      "name": "Taşınabilir HDD (2TB)",
+      "category": "Depolama",
+      "quantity": 14,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "62",
+      "name": "NVMe M.2 SSD (500GB)",
+      "category": "Depolama",
+      "quantity": 3,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "63",
+      "name": "Kurşun Kalem (12'li)",
+      "category": "Kırtasiye",
+      "quantity": 48,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "64",
+      "name": "Silgi (Büyük Boy 24'lü)",
+      "category": "Kırtasiye",
+      "quantity": 12,
+      "unit": "Kutu",
+      "status": "stokta"
+    },
+    {
+      "id": "65",
+      "name": "Sıcak Silikon Tabancası",
+      "category": "Elektronik",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "66",
+      "name": "Ring Light Işık Standı",
+      "category": "Aksesuar",
+      "quantity": 9,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "67",
+      "name": "Akustik Ses Yalıtım Paneli",
+      "category": "Aksesuar",
+      "quantity": 60,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "68",
+      "name": "Projektör / Projeksiyon Cihazı",
+      "category": "Elektronik",
+      "quantity": 2,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "69",
+      "name": "Projeksiyon Perdesi (Storlu)",
+      "category": "Mobilya",
+      "quantity": 4,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "70",
+      "name": "Termos (0.75L Paslanmaz)",
+      "category": "Aksesuar",
+      "quantity": 11,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "71",
+      "name": "Kapsül Kahve Makinesi",
+      "category": "Elektronik",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "72",
+      "name": "Filtre Kahve Kağıdı (100'lü)",
+      "category": "Aksesuar",
+      "quantity": 55,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "73",
+      "name": "Lazer Metre (40 Metre)",
+      "category": "Elektronik",
+      "quantity": 6,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "74",
+      "name": "Giyotin Kağıt Kesme Makinesi",
+      "category": "Kırtasiye",
+      "quantity": 1,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "75",
+      "name": "Plastik Kelepçe Seti (100'lü)",
+      "category": "Aksesuar",
+      "quantity": 90,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "76",
+      "name": "Şarj Edilebilir Pil (AA 4'lü)",
+      "category": "Elektronik",
+      "quantity": 24,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "77",
+      "name": "Hızlı Pil Şarj Cihazı",
+      "category": "Elektronik",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "78",
+      "name": "Bant Makinesi (Masa Üstü)",
+      "category": "Kırtasiye",
+      "quantity": 13,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "79",
+      "name": "Ataş Seti (Renkli 100'lü)",
+      "category": "Kırtasiye",
+      "quantity": 150,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "80",
+      "name": "Evrak İmha Yağı (250ml)",
+      "category": "Aksesuar",
+      "quantity": 3,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "81",
+      "name": "Çift Taraflı Bant (Silikon)",
+      "category": "Aksesuar",
+      "quantity": 42,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "82",
+      "name": "Magazinlik Plastik (Dikey)",
+      "category": "Kırtasiye",
+      "quantity": 28,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "83",
+      "name": "Klavye Temizleme Jeli",
+      "category": "Aksesuar",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "84",
+      "name": "Basınçlı Hava Spreyi (Toz Alıcı)",
+      "category": "Aksesuar",
+      "quantity": 35,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "85",
+      "name": "Ekran Temizleme Kiti",
+      "category": "Aksesuar",
+      "quantity": 47,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "86",
+      "name": "USB C Kulaklık Dönüştürücü",
+      "category": "Aksesuar",
+      "quantity": 60,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "87",
+      "name": "Akıllı Temizlik Robotu",
+      "category": "Elektronik",
+      "quantity": 1,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "88",
+      "name": "Döküman Kamerası",
+      "category": "Elektronik",
+      "quantity": 2,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "89",
+      "name": "Sıvı Tebeşir Kalemi (Beyaz)",
+      "category": "Kırtasiye",
+      "quantity": 16,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "90",
+      "name": "Mantar Pano (60x90cm)",
+      "category": "Kırtasiye",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "91",
+      "name": "Harita Çivisi (50'li)",
+      "category": "Kırtasiye",
+      "quantity": 110,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "92",
+      "name": "Bluetooth Dongle USB",
+      "category": "Aksesuar",
+      "quantity": 23,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "93",
+      "name": "Wi-Fi Menzil Genişletici",
+      "category": "Elektronik",
+      "quantity": 8,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "94",
+      "name": "Ofis Tipi Sehpa",
+      "category": "Mobilya",
+      "quantity": 4,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "95",
+      "name": "Askılı Dosya Havuzu (Metal)",
+      "category": "Kırtasiye",
+      "quantity": 0,
+      "unit": "Adet",
+      "status": "tükendi"
+    },
+    {
+      "id": "96",
+      "name": "Askılı Dosya Föyü (50'li)",
+      "category": "Kırtasiye",
+      "quantity": 12,
+      "unit": "Paket",
+      "status": "stokta"
+    },
+    {
+      "id": "97",
+      "name": "Lazer Sunum Kalemi (Yeşil)",
+      "category": "Elektronik",
+      "quantity": 3,
+      "unit": "Adet",
+      "status": "kritik"
+    },
+    {
+      "id": "98",
+      "name": "HDMI Dağıtıcı (1 Giriş 4 Çıkış)",
+      "category": "Elektronik",
+      "quantity": 7,
+      "unit": "Adet",
+      "status": "stokta"
+    },
+    {
+      "id": "100",
+      "name": "Etiket Şeridi (Yedek Kartuş)",
+      "category": "Aksesuar",
+      "quantity": 19,
+      "unit": "Adet",
+      "status": "stokta"
+    }
   ]
 }

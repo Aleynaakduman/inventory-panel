@@ -148,3 +148,33 @@
      border: 1px solid #babec3;
     border-radius: 4px;
 }
+
+
+
+.action-buttons{
+    display: flex;
+    gap: 5px;
+   
+}
+
+.edit-btn{
+    background-color: #fff;
+    border: none;
+    font-size: 15px;
+     cursor: pointer;
+     color: green;
+}
+
+
+.delete-btn{
+    background-color: #fff;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.action-buttons button:hover{
+  opacity:0.8;
+}

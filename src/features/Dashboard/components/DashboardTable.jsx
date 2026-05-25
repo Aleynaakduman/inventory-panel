@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { TableVirtuoso } from 'react-virtuoso';
-
+import { FaEdit, FaTrash} from "react-icons/fa";
 import {useState, useEffect} from 'react'
 
 
@@ -42,6 +42,11 @@ const columns = [
     width: 140,
     label: 'Durum',
     dataKey: 'status',
+  },
+  {
+    width:140,
+    label: 'İşlemler',
+    dataKey: 'actions'
   }
 ];
 
@@ -58,6 +63,12 @@ const VirtuosoTableComponents = {
   TableRow,
   TableBody: React.forwardRef((props, ref) => <TableBody {...props} ref={ref} />),
 };
+
+
+
+
+
+
 
 function fixedHeaderContent() {
   return (
@@ -77,20 +88,7 @@ function fixedHeaderContent() {
   );
 }
 
-function rowContent(_index, row) {
-  return (
-    <React.Fragment>
-      {columns.map((column) => (
-        <TableCell
-          key={column.dataKey}
-          align={column.numeric || false ? 'right' : 'left'}
-        >
-          {row[column.dataKey]}
-        </TableCell>
-      ))}
-    </React.Fragment>
-  );
-}
+
 
 export default function ReactVirtualizedTable() {
   const [products, setProducts] = useState([]);
@@ -123,6 +121,14 @@ export default function ReactVirtualizedTable() {
   });
 
 
+ const handleDelete = async (id) => {
+  await fetch(`http://localhost:3001/products/${id}` , {
+    method: "DELETE",
+  });
+  setProducts(products.filter((item) => item.id !== id))
+ }
+
+
 
   return (
     <Paper style={{ height: 400, width: '100%' }}>
@@ -147,7 +153,7 @@ export default function ReactVirtualizedTable() {
         <option value="Hepsi">Tüm Durumlar</option>
         <option value="stokta">Stoktakiler</option>
         <option value="tükendi">Tükenenler</option>
-        <option value="kritik">Kritikler</option>
+        <option value="krsitik">Kritikler</option>
       </select>
    </div>
         </div>
@@ -160,4 +166,33 @@ export default function ReactVirtualizedTable() {
       />
     </Paper>
   );
+
+
+  function rowContent(_index, row) {
+  return (
+    <React.Fragment>
+      {columns.map((column) => (
+              <TableCell key={column.dataKey}>
+          {column.dataKey === "actions" ? (
+            <div className="action-buttons">
+
+              <button className="edit-btn">
+                <FaEdit />
+              </button>
+
+              <button onClick={() => handleDelete(row.id , row,name)} className="delete-btn">
+                <FaTrash />
+              </button>
+
+            
+
+            </div>
+          ) : (
+            row[column.dataKey]
+          )}
+        </TableCell>
+      ))}
+    </React.Fragment>
+  );
+}
 }
