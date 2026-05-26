@@ -55,7 +55,6 @@ src/
 <img width="1856" height="919" alt="Ekran görüntüsü 2026-05-27 001333" src="https://github.com/user-attachments/assets/66bc5db6-e14c-4297-9833-9a2b43a9e7ac" />
 
 <img width="1816" height="921" alt="Ekran görüntüsü 2026-05-27 001637" src="https://github.com/user-attachments/assets/185dd39f-1b36-44cf-b352-ef2e45d0c61b" 
-  
 />
 
 <img width="1839" height="931" alt="Ekran görüntüsü 2026-05-27 001652" src="https://github.com/user-attachments/assets/fe8abe20-e5d5-469f-a142-343287469f12" />
