@@ -14,37 +14,37 @@ import {useState} from 'react'
 
 const columns = [
   {
-    width: 80,
+    width: "8%",
     label: 'ID',
     dataKey: 'id',
   },
   {
-    width: 220,
+    width: "22%" ,
     label: 'Ürün',
     dataKey: 'name',
   },
   {
-    width: 160,
+    width: "16%",
     label: 'Kategori',
     dataKey: 'category' 
    },
   {
-    width: 120,
+    width: "12%",
     label: 'Birim',
     dataKey: 'quantity',
   },
   {
-    width: 120,
+    width: "12%",
     label: 'Adet',
     dataKey: 'unit',
   },
    {
-    width: 140,
+    width: "14%",
     label: 'Durum',
     dataKey: 'status',
   },
   {
-    width:140,
+    width:"14%",
     label: 'İşlemler',
     dataKey: 'actions'
   }
@@ -92,7 +92,7 @@ function fixedHeaderContent() {
 
 export default function ReactVirtualizedTable({products, setProducts}) {
 
-
+const [selectedProduct, setSelectedProduct] = useState(null);
 
 
   const [selectedCategory, setSelectedCategory] = useState("Hepsi");
@@ -128,7 +128,25 @@ export default function ReactVirtualizedTable({products, setProducts}) {
 
 
   return (
-  <div className="wrapper">
+  <div className={`wrapper ${selectedProduct ? "with-panel" : ""}`}>
+       {selectedProduct && (
+  <div className="detail-panel">
+    <h3>Ürün Detayı</h3>
+
+    <p><b>ID:</b> {selectedProduct.id}</p>
+    <p><b>Ürün:</b> {selectedProduct.name}</p>
+    <p><b>Kategori:</b> {selectedProduct.category}</p>
+    <p><b>Birim:</b> {selectedProduct.quantity}</p>
+    <p><b>Adet:</b> {selectedProduct.unit}</p>
+    <p><b>Durum:</b> {selectedProduct.status}</p>
+
+    <button onClick={() => setSelectedProduct(null)}>
+      Kapat
+    </button>
+  </div>
+)}
+ <div className="table-area">
+ <div className="table-area"></div>
       <Paper style={{ height: 400, width: '100%' }}>
         <div className="search">
 
@@ -162,15 +180,26 @@ export default function ReactVirtualizedTable({products, setProducts}) {
         itemContent={rowContent}
       />
     </Paper>
+    </div>
   </div>
   );
 
 
   function rowContent(_index, row) {
   return (
+    
     <React.Fragment>
       {columns.map((column) => (
-              <TableCell key={column.dataKey}>
+              <TableCell key={column.dataKey}   key={column.dataKey}
+  onClick={
+    column.dataKey !== "actions"
+      ? () => setSelectedProduct(row)
+      : undefined
+  }
+  style={{
+    cursor: column.dataKey !== "actions" ? "pointer" : "default"
+  }}>
+
           {column.dataKey === "actions" ? (
             <div className="action-buttons">
 

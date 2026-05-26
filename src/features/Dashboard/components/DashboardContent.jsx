@@ -2,7 +2,6 @@ import './DashboardContent.css'
 import { MdOutlineInventory } from "react-icons/md";
 import { BsExclamationCircle } from "react-icons/bs";
 import { IoCloseCircleOutline } from "react-icons/io5";
-import { TfiExport } from "react-icons/tfi";
 import {FiPlus} from "react-icons/fi";
 import DashboardTable from './DashboardTable'
 import {useEffect, useState} from 'react'
@@ -38,6 +37,21 @@ const handleChange = (e) => {
 };
 
 const handleAddProduct = async () => {
+
+    if(!newProduct.name.trim()){
+        alert("Ürün adı boş bırakılamaz!")
+        return;
+    }
+
+      if (Number(newProduct.unit) < 0) {
+    alert("Adet negatif olamaz!");
+    return;
+  }
+
+  if (Number(newProduct.quantity) < 0) {
+    alert("Birim değeri negatif olamaz!");
+    return;
+  }
 
   const response = await fetch("http://localhost:3001/products", {
     method: "POST",
@@ -116,9 +130,7 @@ const handleAddProduct = async () => {
             <div className="dashboard-bottom-content">
                     <h4>Ürünler</h4>
                     <div className="dashboard-btn">
-                    <button className='btn-1' >
-                        <TfiExport /> Dışa Aktar
-                    </button>
+    
                     <button className='btn-2'  onClick={() => setShowForm(true)} > 
                         <FiPlus /> Yeni Ürün Ekle</button>
                     </div>

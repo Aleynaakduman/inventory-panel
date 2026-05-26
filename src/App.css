@@ -98,3 +98,17 @@ background: #0f172a;
   border: 1px solid #4a505e;
   color: #4a505e;
 }
+
+.dark .product-form input ,.dark .product-form select{
+ background-color:#273240;
+}
+
+.dark .detail-panel{
+  background-color: #273240;
+color: #fff;
+}
+
+.dark .detail-panel button{
+  background-color: #3de7d3;
+  color: #0f1a33;
+}
