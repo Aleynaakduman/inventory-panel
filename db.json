@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": "2",
-      "name": "Ortopedik Ofis Koltuğu",
-      "category": "Mobilya",
-      "quantity": 3,
-      "unit": "Adet",
-      "status": "kritik"
-    },
-    {
       "id": "3",
       "name": "A4 Fotokopi Kağıdı (80 gr)",
       "category": "Kırtasiye",

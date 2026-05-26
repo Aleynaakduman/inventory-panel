@@ -91,6 +91,7 @@ function fixedHeaderContent() {
 
 
 export default function ReactVirtualizedTable() {
+
   const [products, setProducts] = useState([]);
 
 
@@ -131,13 +132,13 @@ export default function ReactVirtualizedTable() {
 
 
   return (
-    <Paper style={{ height: 400, width: '100%' }}>
+  <div className="wrapper">
+      <Paper style={{ height: 400, width: '100%' }}>
         <div className="search">
 
-    
 
 
-          <input type="text" placeholder='Ürün Adı Ara...' value={searchTerm}  onChange={(e) => setSearchTerm(e.target.value)}/>
+          <input className='table-input' type="text" placeholder='Ürün Adı Ara...' value={searchTerm}  onChange={(e) => setSearchTerm(e.target.value)}/>
    <div className="select-search">
       <select defaultValue = "Hepsi" value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
       <option value="Hepsi">Tüm Kategoriler</option>
@@ -165,6 +166,7 @@ export default function ReactVirtualizedTable() {
         itemContent={rowContent}
       />
     </Paper>
+  </div>
   );
 
 

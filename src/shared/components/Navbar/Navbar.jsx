@@ -6,13 +6,17 @@
  import MenuIcon from '@mui/icons-material/Menu';
  import { CiLight } from "react-icons/ci";
  import { MdLanguage } from "react-icons/md";
+import './Navbar.css'
 
 
- export default function ButtonAppBar() {
+ export default function ButtonAppBar({darkMode, setDarkMode}) {
+
+
+
    return (
      <Box sx={{ flexGrow: 1 }}>
-       <AppBar position="static" sx={{ backgroundColor:'#fff' , border:'#E5E7EB' , borderRadius:'4px'}}>
-        <Toolbar sx={{ minHeight: '74px !important' , color: '#3F3F46' }}>
+       <AppBar position="static" sx={{backgroundColor: darkMode ? '#1e293b' : '#fff' , border:'#E5E7EB' , borderRadius:'4px'}}>
+        <Toolbar sx={{ minHeight: '74px !important' , color: darkMode ? '#fff': '#000' }}>
            <IconButton
              size="large"
             edge="start"
@@ -25,8 +29,10 @@
            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
              
            </Typography>
-          < CiLight/>
-          <MdLanguage />
+         <div className='nav-icon' >
+          <div className="navbar-icon" onClick={()=> setDarkMode(!darkMode)}> <CiLight/></div>
+          <div className="navbar-icon"><MdLanguage /></div>
+         </div>
          </Toolbar>
        </AppBar>
      </Box>

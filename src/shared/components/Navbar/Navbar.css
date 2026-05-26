@@ -1,0 +1,11 @@
+.nav-icon{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    
+}
+
+
+.navbar-icon{
+    font-size: 25px;
+}

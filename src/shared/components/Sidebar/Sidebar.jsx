@@ -66,7 +66,7 @@ function Sidebar() {
              <FaRegLightbulb/>
             <p>İpucu</p>
            </div>
-           <p>Stok hareketlerinizin geçmişini Excel veya PDF olarak dışa aktarabileceğinizi biliyor muydunuz?</p>
+           <p>Stok hareketlerinizin geçmişini CSV olarak dışa aktarabileceğinizi biliyor muydunuz?</p>
         </div>
     </div>
   )

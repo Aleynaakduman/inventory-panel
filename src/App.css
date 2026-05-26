@@ -29,3 +29,72 @@ body{
   padding: 20px 16px;
   flex-grow: 80;
 }
+
+
+.app.dark{
+background: #0f172a;
+
+}
+.dark .sidebar-container{
+  background-color: #0b1220;
+  color: #f8fafc;
+}
+.dark .sidebar-bottom ul li a{
+  color: #f8fafc;
+}
+
+
+
+.dark 
+.sidebar-bottom ul li:hover a{
+  
+    color: #010101;
+    border-radius: 4px;
+}
+.dark .card1{
+  background: #1e3a5f;
+  color: #f8fafc;
+}
+
+.dark .card2{
+  background: #4b3b12;
+  color: #f8fafc;
+}
+
+.dark .card3{
+  background: #4a1d1f;
+  color: #f8fafc;
+}
+
+.dark .dashboard-bottom-content{
+  color: #f8fafc;
+}
+
+.dark .sidebar-card{
+  background-color: #273240;
+}
+
+
+.dark .select-search select{
+  background-color: #242a38;
+  color: #f8fafc;
+  border: 1px solid #3f475a;
+}
+
+.dark .table-input{
+   background-color: #242a38;
+  color: #f8fafc;
+  border: 1px solid #3f475a;
+}
+
+.dark .btn-1{
+  background-color: #2a2e3b;
+  border:1px solid #3de7d3;
+  color: #3de7d3;
+}
+
+.dark .btn-2{
+  background-color: #ffc85e;
+  border: 1px solid #4a505e;
+  color: #4a505e;
+}

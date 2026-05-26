@@ -13,11 +13,17 @@ useEffect(() => {
 fetch('http://localhost:3001/products')
 .then((ress) => ress.json())
 .then((data) => setProducts(data))
-})
+},[])
 
 const totalProducts = products.length;
 const criticalStockCount = products.filter(p => p.status === 'kritik').length;
 const outOfStockCount = products.filter(p => p.status === 'tükendi').length;
+
+
+
+
+
+
   return (
     <div>
         {/*Dashboard İlk Kısım */}
@@ -71,7 +77,7 @@ const outOfStockCount = products.filter(p => p.status === 'tükendi').length;
             <div className="dashboard-bottom-content">
                     <h4>Ürünler</h4>
                     <div className="dashboard-btn">
-                    <button  className='btn-1' >
+                    <button className='btn-1' >
                         <TfiExport /> Dışa Aktar
                     </button>
                     <button className='btn-2' > 
