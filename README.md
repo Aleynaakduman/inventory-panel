@@ -17,7 +17,7 @@ npm install
 npx json-server --watch db.json --port 3001
 
 ### 4. Uygulamayı çalıştır
-yeni bir terminal açın.
+yeni bir terminal açın.Aşağıdaki komutu çalıştırın.
 
 cd inventory-panel
 
