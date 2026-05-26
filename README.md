@@ -6,7 +6,7 @@
 Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları sırasıyla uygulayın:
 
 ### 1. Projeyi klonla
-git clone https://github.com/kullanici-adiniz/envanter-takip.git
+git clone https://github.com/aleynaakduman/envanter-takip.git
 cd envanter-takip
 
 ### 2. Bağımlılıkları yükle
