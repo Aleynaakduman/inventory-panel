@@ -1,20 +1,64 @@
-<<<<<<< HEAD
-# React + Vite
+# Envanter Takip Sistemi 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🚀 Kurulum ve Başlatma
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları sırasıyla uygulayın:
 
-## React Compiler
+### 1. Projeyi klonla
+git clone https://github.com/kullanici-adiniz/envanter-takip.git
+cd envanter-takip
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Bağımlılıkları yükle
+npm install
 
-## Expanding the ESLint configuration
+### 3. JSON Server’ı başlat
+npx json-server --watch db.json --port 3001
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# inventory-panel
->>>>>>> b00906c8b9481f0811cdb46448b31230c357543d
+### 4. Uygulamayı çalıştır
+npm run dev
+
+📌 Not:
+Bu projede sahte API olarak json-server kullanılmıştır.
+Ürün verileri db.json dosyasından gelir.
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Frontend:** React, JavaScript, HTML5, CSS3  
+- **UI Library:** Material UI (MUI), React Icons  
+- **Build Tool:** Vite  
+- **Mock API:** JSON Server
+
+## 📂 Proje Klasör Yapısı
+
+Bu projede, kodun okunabilirliğini, modülerliğini ve sürdürülebilirliğini artırmak amacıyla **Özellik Tabanlı (Feature-Driven / Domain-Driven)** bir klasör mimarisi tercih edilmiştir:
+
+src/
+├── assets/               # Resimler, logolar ve global fontlar gibi statik varlıklar.
+├── features/             # Uygulamanın ana modülleri/özellikleri bu çatı altında toplanır.
+│   └── Dashboard/        # Kontrol paneline (Envanter Paneli) ait özel alan.
+│       └── components/   # Yalnızca Dashboard sayfasına özel UI bileşenleri ve stilleri.
+│           ├── DashboardContent.css
+│           ├── DashboardContent.jsx
+│           └── DashboardTable.jsx
+├── shared/
+│   └── components/
+│       ├── Navbar/
+│       └── Sidebar/
+├── App.css
+├── App.jsx
+├── index.css
+└── main.jsx
+
+
+## 📸 Ekran Görüntüleri
+<img width="1856" height="919" alt="Ekran görüntüsü 2026-05-27 001333" src="https://github.com/user-attachments/assets/66bc5db6-e14c-4297-9833-9a2b43a9e7ac" />
+
+<img width="1816" height="921" alt="Ekran görüntüsü 2026-05-27 001637" src="https://github.com/user-attachments/assets/185dd39f-1b36-44cf-b352-ef2e45d0c61b" 
+  
+/>
+
+<img width="1839" height="931" alt="Ekran görüntüsü 2026-05-27 001652" src="https://github.com/user-attachments/assets/fe8abe20-e5d5-469f-a142-343287469f12" />
+
+
+
