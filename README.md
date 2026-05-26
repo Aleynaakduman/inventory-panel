@@ -6,9 +6,9 @@
 Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları sırasıyla uygulayın:
 
 ### 1. Projeyi klonla
-git clone https://github.com/aleynaakduman/envanter-takip.git
+git clone https://github.com/aleynaakduman/inventory-panel.git
 
-cd envanter-takip
+cd inventory-panel
 
 ### 2. Bağımlılıkları yükle
 npm install
