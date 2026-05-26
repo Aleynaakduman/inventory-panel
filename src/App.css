@@ -112,3 +112,7 @@ color: #fff;
   background-color: #3de7d3;
   color: #0f1a33;
 }
+
+.dark .delete-btn{
+  background-color: #273240;
+}

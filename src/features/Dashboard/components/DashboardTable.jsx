@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { TableVirtuoso } from 'react-virtuoso';
-import { FaEdit, FaTrash} from "react-icons/fa";
+import { FaTrash} from "react-icons/fa";
 import {useState} from 'react'
 
 
@@ -203,9 +203,7 @@ const [selectedProduct, setSelectedProduct] = useState(null);
           {column.dataKey === "actions" ? (
             <div className="action-buttons">
 
-              <button className="edit-btn">
-                <FaEdit />
-              </button>
+          
 
               <button onClick={() => handleDelete(row.id)} className="delete-btn">
                 <FaTrash />
