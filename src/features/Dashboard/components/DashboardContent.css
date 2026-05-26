@@ -177,6 +177,55 @@
 }
 
 
-.action-buttons button:hover{
-  opacity:0.8;
+.product-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+   border: 1px solid #E5E7EB;
+   border-radius: 4px;
+   padding: 15px;
+
+
+}
+
+.product-form input , .product-form select{
+    padding: 4px;
+    border: 1px solid #E5E7EB;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+.product-form .save-btn{
+   width: 200px;
+   background-color:#f4d682;
+   border: 1px solid #6B7280;
+   border-radius: 4px;
+   padding: 5px;
+   cursor: pointer;
+}
+
+
+.product-form .save-btn:hover{
+    background-color: #fff;
+    color: #f4d682;
+}
+
+.close-form-btn{
+    width: 20px;
+    background-color: #fff;
+    border:none;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+   align-items: center;
+   cursor: pointer;
+   margin-left: 95%;
+    
+}
+
+.close-form-btn:hover{
+    transform: scale(1.1);
 }

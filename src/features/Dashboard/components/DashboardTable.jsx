@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { TableVirtuoso } from 'react-virtuoso';
 import { FaEdit, FaTrash} from "react-icons/fa";
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 
 
@@ -90,9 +90,9 @@ function fixedHeaderContent() {
 
 
 
-export default function ReactVirtualizedTable() {
+export default function ReactVirtualizedTable({products, setProducts}) {
 
-  const [products, setProducts] = useState([]);
+
 
 
   const [selectedCategory, setSelectedCategory] = useState("Hepsi");
@@ -100,11 +100,7 @@ export default function ReactVirtualizedTable() {
   const [searchTerm, setSearchTerm] = useState("");
 
 
-  useEffect(() => {
-    fetch('http://localhost:3001/products')
-    .then((ress) => ress.json())
-    .then((data) => setProducts(data))
-  } , [])
+ 
 
 
   const filterProducts = products.filter((product) => {
@@ -182,7 +178,7 @@ export default function ReactVirtualizedTable() {
                 <FaEdit />
               </button>
 
-              <button onClick={() => handleDelete(row.id , row,name)} className="delete-btn">
+              <button onClick={() => handleDelete(row.id)} className="delete-btn">
                 <FaTrash />
               </button>
 

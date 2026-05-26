@@ -6,6 +6,7 @@ import { TfiExport } from "react-icons/tfi";
 import {FiPlus} from "react-icons/fi";
 import DashboardTable from './DashboardTable'
 import {useEffect, useState} from 'react'
+import { IoClose } from "react-icons/io5";
 
 const DashboardContent = () => {
 const [products, setProducts] = useState([])
@@ -19,13 +20,51 @@ const totalProducts = products.length;
 const criticalStockCount = products.filter(p => p.status === 'kritik').length;
 const outOfStockCount = products.filter(p => p.status === 'tükendi').length;
 
+const [showForm, setShowForm] = useState(false);
+
+const [newProduct, setNewProduct] = useState({
+    name:"",
+    categorry:"",
+    quantity:"",
+    unit:"",
+    status:""
+});
 
 
+const handleChange = (e) => {
+    setNewProduct({
+        ...newProduct,[e.target.name]: e.target.value
+    });
+};
 
+const handleAddProduct = async () => {
 
+  const response = await fetch("http://localhost:3001/products", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newProduct)
+  });
+
+  const addedProduct = await response.json();
+
+  setProducts([...products, addedProduct]);
+
+  setShowForm(false);
+
+  setNewProduct({
+    name: "",
+    category: "",
+    quantity: "",
+    unit: "",
+    status: ""
+  });
+};
 
   return (
     <div>
+
         {/*Dashboard İlk Kısım */}
         <div className="dashboard-cards">
             <div className="card1" >
@@ -80,13 +119,73 @@ const outOfStockCount = products.filter(p => p.status === 'tükendi').length;
                     <button className='btn-1' >
                         <TfiExport /> Dışa Aktar
                     </button>
-                    <button className='btn-2' > 
+                    <button className='btn-2'  onClick={() => setShowForm(true)} > 
                         <FiPlus /> Yeni Ürün Ekle</button>
                     </div>
             </div>
+     {
+  showForm && (
+    <div className="product-form">
+        <button
+  className="close-form-btn"
+  onClick={() => setShowForm(false)}
+>
+  <IoClose />
+</button>
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Ürün Adı"
+        value={newProduct.name}
+        onChange={handleChange}
+      />
+
+      <input
+        type="text"
+        name="category"
+        placeholder="Kategori"
+        value={newProduct.category}
+        onChange={handleChange}
+      />
+
+      <input
+        type="text"
+        name="quantity"
+        placeholder="Birim"
+        value={newProduct.quantity}
+        onChange={handleChange}
+      />
+
+      <input
+        type="number"
+        name="unit"
+        placeholder="Adet"
+        value={newProduct.unit}
+        onChange={handleChange}
+      />
+
+      <select
+        name="status"
+        value={newProduct.status}
+        onChange={handleChange}
+      >
+        <option value="">Durum Seç</option>
+        <option value="stokta">Stokta</option>
+        <option value="kritik">Kritik</option>
+        <option value="tükendi">Tükendi</option>
+      </select>
+
+      <button className='save-btn' onClick={handleAddProduct}>
+        Kaydet
+      </button>
+
+    </div>
+  )
+}
 
             <div className="dashboard-bottom-table">
-                <DashboardTable/>
+                <DashboardTable products={products} setProducts={setProducts}/>
 
             </div>
         </div>

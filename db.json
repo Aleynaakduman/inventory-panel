@@ -1,38 +1,6 @@
 {
   "products": [
     {
-      "id": "3",
-      "name": "A4 Fotokopi Kağıdı (80 gr)",
-      "category": "Kırtasiye",
-      "quantity": 0,
-      "unit": "Kutu",
-      "status": "tükendi"
-    },
-    {
-      "id": "4",
-      "name": "Bluetooth Kulak Üstü Kulaklık",
-      "category": "Elektronik",
-      "quantity": 18,
-      "unit": "Adet",
-      "status": "stokta"
-    },
-    {
-      "id": "5",
-      "name": "Çalışma Masası (Ahşap)",
-      "category": "Mobilya",
-      "quantity": 5,
-      "unit": "Adet",
-      "status": "stokta"
-    },
-    {
-      "id": "6",
-      "name": "Fosforlu Kalem Seti (4'lü)",
-      "category": "Kırtasiye",
-      "quantity": 2,
-      "unit": "Paket",
-      "status": "kritik"
-    },
-    {
       "id": "7",
       "name": "27 inç Oyuncu Monitörü",
       "category": "Elektronik",

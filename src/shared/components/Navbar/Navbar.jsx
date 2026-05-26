@@ -6,6 +6,7 @@
  import MenuIcon from '@mui/icons-material/Menu';
  import { CiLight } from "react-icons/ci";
  import { MdLanguage } from "react-icons/md";
+ import { IoMoonSharp } from "react-icons/io5";
 import './Navbar.css'
 
 
@@ -30,7 +31,7 @@ import './Navbar.css'
              
            </Typography>
          <div className='nav-icon' >
-          <div className="navbar-icon" onClick={()=> setDarkMode(!darkMode)}> <CiLight/></div>
+          <div className="navbar-icon" onClick={()=> setDarkMode(!darkMode)}>{darkMode ?  <CiLight/> : <IoMoonSharp/>  } </div>
           <div className="navbar-icon"><MdLanguage /></div>
          </div>
          </Toolbar>
